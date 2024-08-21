@@ -1,0 +1,25 @@
+
+
+# Welcome to my MDX page!
+ 
+This is some **bold** and _italics_ text.
+ 
+This is a list in markdown:
+ 
+- One
+- Two
+- Three
+ 
+Checkout my React component:
+
+import { Button } from '@/components/ui/button'
+import { message } from '@/components/ui/message'
+
+<Button onClick={() => message.success('This is a success message.')}>sdsda</Button>
+
+import MdxLayout from '@/components/MdxLayout'
+export default function MDXPage({ children }) {
+    return <MdxLayout>
+        {children}
+    </MdxLayout>
+}
